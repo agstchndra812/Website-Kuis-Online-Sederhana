@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kuis HTML, CSS, JS & DOM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Kuis Web Dasar</h1>
+    <p class="subtitle">HTML • CSS • JavaScript • DOM</p>
+
+    <form id="quizForm">
+
+      <div class="question">
+        <p>1. Apa fungsi utama HTML?</p>
+        <label><input type="radio" name="q1" value="a"> Mengatur logika program</label>
+        <label><input type="radio" name="q1" value="b"> Mengatur tampilan</label>
+        <label><input type="radio" name="q1" value="c"> Membuat struktur halaman</label>
+        <label><input type="radio" name="q1" value="d"> Menghubungkan database</label>
+      </div>
+
+      <div class="question">
+        <p>2. CSS digunakan untuk?</p>
+        <label><input type="radio" name="q2" value="a"> Struktur halaman</label>
+        <label><input type="radio" name="q2" value="b"> Styling tampilan</label>
+        <label><input type="radio" name="q2" value="c"> Logika program</label>
+        <label><input type="radio" name="q2" value="d"> Validasi data</label>
+      </div>
+
+      <div class="question">
+        <p>3. JavaScript berfungsi untuk?</p>
+        <label><input type="radio" name="q3" value="a"> Styling</label>
+        <label><input type="radio" name="q3" value="b"> Membuat tabel</label>
+        <label><input type="radio" name="q3" value="c"> Interaksi & logika</label>
+        <label><input type="radio" name="q3" value="d"> Menyimpan file</label>
+      </div>
+
+      <div class="question">
+        <p>4. DOM adalah?</p>
+        <label><input type="radio" name="q4" value="a"> Bahasa pemrograman</label>
+        <label><input type="radio" name="q4" value="b"> Database online</label>
+        <label><input type="radio" name="q4" value="c"> Representasi elemen HTML</label>
+        <label><input type="radio" name="q4" value="d"> Framework CSS</label>
+      </div>
+
+      <div class="question">
+        <p>5. Fungsi document.getElementById() adalah?</p>
+        <label><input type="radio" name="q5" value="a"> Menghapus elemen</label>
+        <label><input type="radio" name="q5" value="b"> Mengambil elemen HTML</label>
+        <label><input type="radio" name="q5" value="c"> Menyimpan data</label>
+        <label><input type="radio" name="q5" value="d"> Mengatur CSS</label>
+      </div>
+
+      <button type="submit">Selesai Kuis</button>
+    </form>
+
+    <div id="hasil" class="hasil"></div>
+
+    <button id="ulangBtn" class="ulang" style="display:none;">Ulangi Kuis</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
